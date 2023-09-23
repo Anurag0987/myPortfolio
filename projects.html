@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0 32 44);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(0, 45, 59);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 145, 145);
+            font-size: 1.05rem;
+        }
+
+        .left {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .firstSection {
+            display: flex;
+            /* justify-content: space-around; */
+            margin: 30px 0;
+            /* align-items: center; */
+            padding: 0 130px;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Style the dropdown menu */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Style the dropdown button (Contact) */
+        .dropbtn {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Style the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(0, 45, 59);
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        /* Style the dropdown links */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color on hover */
+        .dropdown-content a:hover {
+            background-color: rgb(0, 145, 145);
+            color: white;
+        }
+
+        /* Show the dropdown content on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .container {
+            text-align: center;
+            justify-content: center;
+            padding: 0 125px;
+
+        }
+
+        .collapsible {
+            background-color: rgb(0, 45, 59);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: rgb(0, 58, 70);
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            text-align: left;
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            background-color: rgb(0, 32, 44);
+            font-size: 0.94rem;
+            border: 2px solid rgb(0, 45, 59);
+
+        }
+
+        p {
+            /* text-indent: 50px; */
+            margin-left: 50px;
+            line-height: 2.2;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Anurag's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Contact</a>
+                        <div class="dropdown-content">
+                            <a href="https://github.com/Anurag0987">Github</a>
+                            <a href="https://www.linkedin.com/in/mangalampalli-sri-anurag-9980/">LinkedIn</a>
+                            <a href="mailto:anuragmangalampalli144@gmail.com">Email</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Projects
+            </div>
+
+
+        </section>
+        <div class="container">
+            <button class="collapsible">IoT Device Management Platform <i>(2+ years)</i></button>
+            <div class="content">
+                <span>Technologies:</span>
+                <p> Node JS, Express, Javascript, SQL, AWS, Docker, Python, AI&ML </p>
+                <span>Description:</span>
+                <p> In this project, I led the development of backend solutions for both end-user
+                    and EMP
+                    (Enterprise Mobility Platform) software applications. These applications were designed to
+                    efficiently manage, monitor, and access hardware devices and their endpoints.</p>
+                <span>Technical Contributions:</span>
+                <p> <b>RESTful APIs:</b> I designed and implemented RESTful APIs to enable seamless communication
+                    between the
+                    software applications and the hardware devices. These APIs formed the foundation of our platform's
+                    functionality.
+                </p>
+                <p> <b>Integration of 3rd-Party Open Source Services:</b> I successfully configured and integrated
+                    various third-party open-source services, including Snort IPS/IDS System, OpenVAS vulnerability
+                    scanner system, Asterisk VOIP server, VPN services, and Tableau visualization server. This
+                    integration enhanced our platform's capabilities and security.</p>
+                <p> <b>Custom Instant Messaging Services:</b> I developed custom instant messaging services using web
+                    sockets, enabling real-time communication and collaboration among users of the platform.
+                </p>
+                <p><b>Cloud Storage Data Management:</b> I created a cloud storage data management service to
+                    efficiently store and retrieve data from the cloud, ensuring scalability and data accessibility.
+                </p>
+                <p><b>Intermediate Python Scripts:</b> I developed intermediate Python scripts to effectively manage and
+                    process data from IoT devices and their responses. These scripts played a crucial role in data
+                    processing and analysis.
+                </p>
+                <p><b>AWS Services Utilization:</b> Leveraging AWS services such as IoT Greengrass, S3, EC2, RDS, SQS,
+                    and Lambda, I ensured the scalability, reliability, and accessibility of our platform.
+                </p>
+                <span>Research and Development:</span>
+                <p>
+                    <b>Open Source Alternatives:</b> I conducted extensive research and development efforts to identify
+                    and
+                    implement open-source alternatives for key features in the market. This strategic move enhanced our
+                    platform's security and efficiency.
+                </p>
+                <p>
+                    <b>Wireframing and UX:</b> I contributed to wireframing the key features and functionalities of
+                    the EMP
+                    platform. This process aimed to provide end-users with insightful information, improve the user
+                    experience, and make the platform more user-friendly.
+                </p>
+                <span>Approach:</span>
+                <p>
+                    <b>Requirement Analysis:</b> I began by carefully understanding project requirements, gathering
+                    essential
+                    information, and defining project objectives.
+                </p>
+                <p>
+
+                    <b>Design and Evaluation:</b> Next, I designed the initial flow of the project, taking into
+                    consideration
+                    industry standards and best practices. I evaluated similar use cases in the market to ensure our
+                    approach was competitive and innovative.
+                </p>
+                <p>
+
+                    <b>Development and Optimization:</b> Following the design phase, I executed the development,
+                    continuously
+                    optimizing and enhancing features for efficiency and scalability.
+                </p>
+
+            </div>
+            <button class="collapsible">Additional Projects and Contributions</button>
+            <div class="content">
+                <span>Technologies:</span>
+                <p> Python, Javascript, AI&ML, R&D </p>
+                <span>Technical Contributions:</span>
+                <p> <b>Deep Learning Image Classification Model:</b> I have designed and developed a custom deep
+                    learning
+                    image classification model that demonstrated exceptional accuracy of over <b>95%</b> in predicting
+                    paychecks in real-time scenarios.</p>
+                <p>
+
+                    <b>Proof of Concepts (POCs):</b> I designed several proof-of-concept projects to explore and
+                    validate
+                    research ideas proposed by stakeholders.
+                </p>
+
+            </div>
+            <!-- <button class="collapsible">Open Section 3</button>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div> -->
+        </div>
+    </main>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        // for (i = 0; i < coll.length; i++) {
+        //     coll[i].addEventListener("click", function () {
+        //         this.classList.toggle("active");
+        //         var content = this.nextElementSibling;
+
+        //         if (content.style.maxHeight) {
+        //             content.style.maxHeight = null;
+        //         } else {
+        //             content.style.maxHeight = content.scrollHeight + "px";
+        //         }
+
+        //     });
+        // }
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    this.classList.remove("active");
+                } else {
+                    // Close all other collapsible sections
+                    for (var j = 0; j < coll.length; j++) {
+                        var otherContent = coll[j].nextElementSibling;
+                        if (otherContent.style.maxHeight) {
+                            otherContent.style.maxHeight = null;
+                            coll[j].classList.remove("active");
+                        }
+                    }
+
+                    // Open the clicked collapsible section
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    this.classList.add("active");
+                }
+            });
+        }
+    </script>
+
+
+</body>
+
+</html>
